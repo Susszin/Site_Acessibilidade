@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Acessibilidade Auditiva</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="accessibility.js" defer></script>
+</head>
+
+<body>
+    <!-- Barra de Acessibilidade -->
+    <div class="accessibility-bar">
+        <button onclick="increaseFontSize()">A+</button>
+        <button onclick="decreaseFontSize()">A-</button>
+        <button onclick="toggleContrast()">Alto Contraste</button>
+    </div>
+
+    <header>
+        <a href="#"><img src="imagens/logo.jpg" alt="Logo do site Acessibilidade Digital"></a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="audio.html">Acessibilidade Auditiva</a>
+            <a href="visual.html">Acessibilidade Visual</a>
+            <a href="contact.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Acessibilidade Auditiva</h1>
+        <p id="audioText">
+            A acessibilidade auditiva é fundamental para promover a inclusão de pessoas com deficiência auditiva na
+            sociedade. No Brasil, a Lei nº 10.098, de 2000, estabelece normas gerais e critérios básicos para a promoção
+            da acessibilidade das pessoas com deficiência ou com mobilidade reduzida, incluindo aquelas com deficiência
+            auditiva.
+        </p>
+        <p id="audioText2">
+            Tecnologias assistivas têm desempenhado um papel crucial na melhoria da qualidade de vida dessas pessoas.
+            Dispositivos como aparelhos auditivos, implantes cocleares e sistemas de frequência modulada (FM) auxiliam
+            na amplificação e clareza dos sons, facilitando a comunicação. Além disso, recursos como legendas em tempo
+            real, intérpretes de Língua de Sinais e aplicativos de transcrição automática têm ampliado o acesso à
+            informação.
+        </p>
+        <p id="audioText3">
+            No ambiente educacional, a inclusão de alunos com deficiência auditiva ainda enfrenta desafios
+            significativos. A falta de profissionais capacitados e de recursos adequados pode comprometer o processo de
+            aprendizagem desses estudantes. É essencial que as instituições de ensino adotem práticas inclusivas, como a
+            disponibilização de intérpretes de Língua de Sinais e materiais didáticos acessíveis, para garantir uma
+            educação de qualidade para todos.
+        </p>
+        <button class="audio-btn" onclick="readText('audioText')">Ouvir Parte 1</button>
+        <button class="audio-btn" onclick="readText('audioText2')">Ouvir Parte 2</button>
+        <button class="audio-btn" onclick="readText('audioText3')">Ouvir Parte 3</button>
+        <button class="audio-btn pause-btn" onclick="pauseText()">Pausar</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Acessibilidade Digital. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

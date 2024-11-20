@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Sobre Nós</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="accessibility.js" defer></script>
+</head>
+
+<body>
+    <!-- Barra de Acessibilidade -->
+    <div class="accessibility-bar">
+        <button onclick="increaseFontSize()">A+</button>
+        <button onclick="decreaseFontSize()">A-</button>
+        <button onclick="toggleContrast()">Alto Contraste</button>
+    </div>
+
+    <header>
+        <a href="#"><img src="imagens/logo.jpg" alt="Logo do site Acessibilidade Digital"></a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="audio.html">Acessibilidade Auditiva</a>
+            <a href="visual.html">Acessibilidade Visual</a>
+            <a href="contact.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Sobre Nós</h1>
+        <p id="sobreText1">
+            O <strong>Acessibilidade Digital</strong> é uma iniciativa comprometida em promover a inclusão digital e
+            social por meio da disseminação de informações, tecnologias e práticas que assegurem a acessibilidade para
+            todos. Nosso objetivo principal é contribuir para um mundo digital mais igualitário, onde pessoas com
+            qualquer tipo de deficiência, sejam visuais, auditivas, motoras ou cognitivas, possam navegar na internet,
+            acessar serviços e interagir com o conteúdo de forma autônoma e segura.
+        </p>
+
+        <p id="sobreText2">
+            A acessibilidade é mais do que uma questão técnica ou legal; é um direito fundamental garantido pela
+            <strong>Lei Brasileira de Inclusão (Lei nº 13.146/2015)</strong>, que determina a obrigatoriedade de tornar
+            ambientes digitais e físicos acessíveis. No entanto, muitas barreiras ainda persistem, tanto no design de
+            interfaces quanto na falta de compreensão sobre as necessidades de pessoas com deficiência. É nesse contexto
+            que atuamos, desenvolvendo conteúdos que educam e inspiram mudanças.
+        </p>
+
+        <p id="sobreText3">
+            Nosso site oferece informações sobre:
+        <ul>
+            <li id="sobreList1"><strong>Acessibilidade Visual:</strong> Ferramentas, práticas e tecnologias que
+                facilitam a navegação e o acesso ao conteúdo para pessoas com deficiência visual parcial ou total.</li>
+            <li id="sobreList2"><strong>Acessibilidade Auditiva:</strong> Soluções como legendas, transcrições e
+                intérpretes de Libras que garantem a inclusão de pessoas com deficiência auditiva no ambiente digital.
+            </li>
+            <li id="sobreList3"><strong>Inovação Tecnológica:</strong> Acompanhamos os avanços em tecnologias assistivas
+                e padrões de acessibilidade, como leitores de tela, dispositivos táteis e inteligência artificial
+                aplicada à inclusão.</li>
+        </ul>
+        </p>
+
+        <p id="sobreText4">
+            Somos uma equipe multidisciplinar composta por profissionais das áreas de tecnologia, design, educação e
+            inclusão social. Trabalhamos juntos para criar um espaço informativo e funcional, onde empresas,
+            desenvolvedores, educadores e o público em geral possam aprender sobre as melhores práticas de
+            acessibilidade e aplicá-las no dia a dia.
+        </p>
+
+        <p id="sobreText5">
+            Acreditamos que a acessibilidade beneficia a todos, não apenas pessoas com deficiência. Um site bem
+            estruturado e inclusivo é mais fácil de usar, mais eficiente e atinge um público maior. Nossa missão é
+            educar, informar e empoderar as pessoas para construir um futuro digital mais acessível e justo.
+        </p>
+
+        <p id="sobreText6">
+            Seja bem-vindo ao nosso site! Junte-se a nós nessa jornada pela inclusão e pela acessibilidade digital.
+        </p>
+
+        <!-- Botões de Leitura -->
+        <button class="audio-btn" onclick="readText('sobreText1')">Ouvir Parte 1</button>
+        <button class="audio-btn" onclick="readText('sobreText2')">Ouvir Parte 2</button>
+        <button class="audio-btn" onclick="readText('sobreText3')">Ouvir Parte 3</button>
+        <button class="audio-btn" onclick="readText('sobreText4')">Ouvir Parte 4</button>
+        <button class="audio-btn" onclick="readText('sobreText5')">Ouvir Parte 5</button>
+        <button class="audio-btn" onclick="readText('sobreText6')">Ouvir Parte 6</button>
+        <button class="audio-btn pause-btn" onclick="pauseText()">Pausar</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Acessibilidade Digital. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

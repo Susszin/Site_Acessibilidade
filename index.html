@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Acessibilidade no Cotidiano</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="accessibility.js" defer></script>
+</head>
+
+<body>
+    <!-- Barra de Acessibilidade -->
+    <div class="accessibility-bar">
+        <button onclick="increaseFontSize()">A+</button>
+        <button onclick="decreaseFontSize()">A-</button>
+        <button onclick="toggleContrast()">Alto Contraste</button>
+    </div>
+
+    <header>
+        <a href="#"><img src="imagens/logo.jpg" alt="Logo do site Acessibilidade Digital"></a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="audio.html">Acessibilidade Auditiva</a>
+            <a href="visual.html">Acessibilidade Visual</a>
+            <a href="contact.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <p class="page-title">Acessibilidade no Cotidiano</p>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="imagens/Geral.jpg" alt="Imagem representando a acessibilidade">
+                <div class="heading">Importância da Acessibilidade</div>
+                <p class="snippet" id="text1">
+                    A acessibilidade digital é mais do que uma necessidade; é um compromisso com a inclusão. Garantir
+                    que pessoas de todas as habilidades possam acessar e usar tecnologias é essencial para um mundo mais
+                    igualitário. Entenda como a acessibilidade pode transformar vidas e criar oportunidades para todos.
+                </p>
+                <button class="audio-btn" onclick="readText('text1')">Ouvir</button>
+                <button class="audio-btn pause-btn" onclick="pauseText()">Pausar</button>
+                <a class="btn" href="sobre.html">Saiba Mais</a>
+            </div>
+            <div class="grid-item">
+                <img src="imagens/Visual.png" alt="Imagem representando acessibilidade visual">
+                <div class="heading">Acessibilidade Visual</div>
+                <p class="snippet" id="text2">
+                    Para pessoas com deficiência visual, a tecnologia pode ser uma ponte para a independência. Desde
+                    leitores de tela até interfaces de alto contraste, descubra como práticas inclusivas estão mudando a
+                    forma como essas pessoas interagem com o mundo digital.
+                </p>
+                <button class="audio-btn" onclick="readText('text2')">Ouvir</button>
+                <button class="audio-btn pause-btn" onclick="pauseText()">Pausar</button>
+                <a class="btn" href="visual.html">Saiba Mais</a>
+            </div>
+            <div class="grid-item">
+                <img src="imagens/Audio.png" alt="Imagem representando acessibilidade auditiva">
+                <div class="heading">Acessibilidade Auditiva</div>
+                <p class="snippet" id="text3">
+                    Comunicar-se de forma inclusiva é essencial para integrar pessoas com deficiência auditiva. Soluções
+                    como legendas, transcrições e tecnologias assistivas ajudam a garantir que todos possam participar
+                    de forma igualitária no ambiente digital.
+                </p>
+                <button class="audio-btn" onclick="readText('text3')">Ouvir</button>
+                <button class="audio-btn pause-btn" onclick="pauseText()">Pausar</button>
+                <a class="btn" href="audio.html">Saiba Mais</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Acessibilidade Digital. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

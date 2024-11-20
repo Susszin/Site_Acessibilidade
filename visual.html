@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Acessibilidade Visual</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="accessibility.js" defer></script>
+</head>
+
+<body>
+    <!-- Barra de Acessibilidade -->
+    <div class="accessibility-bar">
+        <button onclick="increaseFontSize()">A+</button>
+        <button onclick="decreaseFontSize()">A-</button>
+        <button onclick="toggleContrast()">Alto Contraste</button>
+    </div>
+
+    <header>
+        <a href="#"><img src="imagens/logo.jpg" alt="Logo do site Acessibilidade Digital"></a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="audio.html">Acessibilidade Auditiva</a>
+            <a href="visual.html">Acessibilidade Visual</a>
+            <a href="contact.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Acessibilidade Visual</h1>
+        <p id="visualText1">
+            A acessibilidade visual é essencial para garantir que pessoas com deficiência visual, parcial ou total,
+            possam navegar, interagir e consumir informações no ambiente digital. Essa inclusão vai além do aspecto
+            técnico, envolvendo a criação de experiências que promovam a igualdade de acesso para todos os usuários.
+        </p>
+        <p id="visualText2">
+            No mundo digital, muitas barreiras podem surgir para pessoas com deficiência visual, como sites mal
+            estruturados, textos pouco legíveis e a ausência de descrições em imagens. Para superar esses desafios,
+            existem várias práticas e ferramentas que tornam o ambiente digital mais acessível, incluindo:
+        </p>
+        <ul>
+            <li id="visualList1">Leitores de tela: ferramentas que convertem texto em áudio, permitindo que pessoas
+                cegas ou com baixa visão naveguem em sites e aplicativos.</li>
+            <li id="visualList2">Descrições alternativas (alt text): imagens devem incluir descrições que possam ser
+                interpretadas por leitores de tela.</li>
+            <li id="visualList3">Alto contraste: combinações de cores que garantem a legibilidade de textos para pessoas
+                com baixa visão ou sensibilidade a certas cores.</li>
+            <li id="visualList4">Fonte ajustável: permitir que o usuário aumente ou diminua o tamanho da fonte conforme
+                sua necessidade.</li>
+        </ul>
+        <p id="visualText3">
+            Além disso, tecnologias como Braille digital e interfaces táteis têm avançado, permitindo que pessoas com
+            deficiência visual interajam com o mundo digital de maneira mais eficiente. Organizações e desenvolvedores
+            devem adotar padrões como as Diretrizes de Acessibilidade para Conteúdo Web (WCAG), que estabelecem boas
+            práticas para tornar a web acessível.
+        </p>
+        <button class="audio-btn" onclick="readText('visualText1')">Ouvir Parte 1</button>
+        <button class="audio-btn" onclick="readText('visualText2')">Ouvir Parte 2</button>
+        <button class="audio-btn" onclick="readText('visualText3')">Ouvir Parte 3</button>
+        <button class="audio-btn pause-btn" onclick="pauseText()">Pausar</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Acessibilidade Digital. Todos os direitos reservados.</p>
+    </footer>

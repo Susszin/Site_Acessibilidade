@@ -1,0 +1,267 @@
+/* Geral */
+html,
+body {
+    height: 100%;
+    /* Garante que o corpo ocupe 100% da altura */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #004aad;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header img {
+    max-height: 60px;
+}
+
+.navigation {
+    margin-top: 10px;
+}
+
+.navigation a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+/* Barra de Acessibilidade */
+.accessibility-bar {
+    background-color: #004aad;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.accessibility-bar button {
+    background-color: #fff;
+    color: #004aad;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.accessibility-bar button:hover {
+    background-color: #ddd;
+}
+
+/* Botões de Áudio */
+.audio-btn {
+    background-color: #004aad;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.audio-btn:hover {
+    background-color: #00337d;
+}
+
+.pause-btn {
+    background-color: #e60000;
+    /* Vermelho para destacar */
+}
+
+.pause-btn:hover {
+    background-color: #b30000;
+}
+
+/* Grid da Página Home */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.grid-item .heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.grid-item .snippet {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.grid-item .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #004aad;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.grid-item .btn:hover {
+    background-color: #00337d;
+}
+
+/* Modo Alto Contraste */
+.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+.high-contrast a {
+    color: #ff0;
+    /* Links em amarelo */
+    text-decoration: underline;
+}
+
+.high-contrast .grid-item {
+    background-color: #333;
+    /* Fundo cinza escuro para os itens */
+    color: #fff;
+    /* Texto branco nos itens */
+}
+
+.high-contrast .grid-item a {
+    color: #ff0;
+    /* Links em amarelo nos itens */
+}
+
+.high-contrast .audio-btn,
+.high-contrast .pause-btn {
+    background-color: #444;
+    /* Fundo cinza escuro nos botões */
+    color: #fff;
+    /* Texto branco nos botões */
+}
+
+.high-contrast .audio-btn:hover,
+.high-contrast .pause-btn:hover {
+    background-color: #666;
+    /* Fundo mais claro no hover */
+}
+
+/* Centralizar o formulário na página de contato */
+.contact-page {
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    min-height: 100vh;
+    /* Ocupa a altura total da tela */
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.contact-page form {
+    width: 100%;
+    /* Ocupa toda a largura disponível */
+    max-width: 400px;
+    /* Define uma largura máxima */
+    padding: 20px;
+    background-color: #fff;
+    /* Fundo branco */
+    border: 1px solid #ddd;
+    /* Borda para destacar o formulário */
+    border-radius: 8px;
+    /* Cantos arredondados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+.contact-page form h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-page form label {
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-page form input,
+.contact-page form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.contact-page form textarea {
+    resize: none;
+    /* Impede o redimensionamento */
+    height: 100px;
+    /* Altura fixa */
+}
+
+.contact-page form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #004aad;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-page form button:hover {
+    background-color: #00337d;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #004aad;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    /* Garante que o rodapé ocupe toda a largura */
+}
